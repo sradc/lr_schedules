@@ -9,7 +9,6 @@ packages = [{include = "lr_schedules"}]
 [tool.poetry.dependencies]
 python = ">=3.9"
 
-
 [tool.poetry.group.dev.dependencies]
 matplotlib = "^3.7.2"
 black = {extras = ["jupyter"], version = "^23.7.0"}
@@ -20,6 +19,24 @@ numpy = "^1.25.2"
 pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
 pre-commit = "^3.3.3"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+torch = [
+  {url = "https://download.pytorch.org/whl/cpu/torch-2.0.1%2Bcpu-cp39-cp39-linux_x86_64.whl", markers = "sys_platform == 'linux'"},
+  {url = "https://download.pytorch.org/whl/cpu/torch-2.0.1-cp39-none-macosx_11_0_arm64.whl", markers = "sys_platform == 'darwin'"},
+]
+matplotlib = "^3.7.2"
+# I ended up running
+# poetry run pip install --upgrade "ipython[all]"
+# because I couldn't get the stuff to work with poetry
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
