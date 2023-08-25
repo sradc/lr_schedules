@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "lr_schedules"
+version = "0.1.0"
+description = ""
+authors = ["sradc <sidneyradcliffe@sky.com>"]
+readme = "README.md"
+packages = [{include = "lr_schedules"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+matplotlib = "^3.7.2"
+black = {extras = ["jupyter"], version = "^23.7.0"}
+isort = "^5.12.0"
+autoflake = "^2.2.0"
+ipykernel = "^6.25.1"
+numpy = "^1.25.2"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+pre-commit = "^3.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
