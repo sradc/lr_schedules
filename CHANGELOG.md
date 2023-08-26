@@ -2,6 +2,33 @@
 
 
 
+## v0.0.2 (2023-08-26)
+
+### Chore
+
+* chore: update Makefile so github action doesn&#39;t fail if no release is needed ([`52d9831`](https://github.com/sradc/lr_schedules/commit/52d983169e0b985ca8e18fea384d34b8c4485680))
+
+### Fix
+
+* fix: noop, trigger release ([`47d017f`](https://github.com/sradc/lr_schedules/commit/47d017f7a0f8a9b2dc8501ff992c4c7712c8a649))
+
+### Unknown
+
+* updated metadata for pypi ([`0d875a5`](https://github.com/sradc/lr_schedules/commit/0d875a528c91786d0083068e34b2ad3cf5c60722))
+
+* add license ([`b650e0b`](https://github.com/sradc/lr_schedules/commit/b650e0bda256ee69c9c615544dd244c1b4ad8118))
+
+* replace relative readme files with absolute links (e.g. for pypi) ([`9f69c0e`](https://github.com/sradc/lr_schedules/commit/9f69c0e16b0a813df85d726880a286e9803f8762))
+
+* added warning about editing README.md directly ([`e259f3b`](https://github.com/sradc/lr_schedules/commit/e259f3b97d493417c1b60716b198e284339b22a7))
+
+* updated readme generation to export images instead of data urls which didn&#39;t work on github ([`13afe5b`](https://github.com/sradc/lr_schedules/commit/13afe5bb0fdd517eb0dbbee6d98b4336858d8620))
+
+* updated fetch for semantic-release ([`8eba661`](https://github.com/sradc/lr_schedules/commit/8eba661bfc4f9845521d159f4494275a45ae7ea2))
+
+* added semantic-release to cicd ([`d4d91bb`](https://github.com/sradc/lr_schedules/commit/d4d91bb8dc51549ba424a1e00c6cf06b06733bcd))
+
+
 ## v0.0.1 (2023-08-26)
 
 ### Chore

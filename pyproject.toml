@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lr_schedules"
-version = "0.0.1"
+version = "0.0.2"
 description = "Learning rate schedulers, for libraries like PyTorch"
 authors = ["sradc <sidneyradcliffe@sky.com>"]
 readme = "README.md"
