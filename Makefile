@@ -5,3 +5,6 @@ format:
 
 test:
 	poetry run python -m pytest --cov=lr_schedules tests
+
+readme:
+	python -m nbconvert --ExtractOutputPreprocessor.enabled=False --to custom --template=markdown.tpl --output README.md README.ipynb
