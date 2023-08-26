@@ -41,7 +41,7 @@ plt.show()
 
 
     
-![png](README_files/README_3_0.png)
+![README_files/README_3_0.png](https://raw.githubusercontent.com/sradc/lr_schedules/master/README_files/README_3_0.png)
     
 
 
@@ -75,7 +75,7 @@ plt.show()
 
 
     
-![png](README_files/README_5_0.png)
+![README_files/README_5_0.png](https://raw.githubusercontent.com/sradc/lr_schedules/master/README_files/README_5_0.png)
     
 
 
@@ -109,7 +109,7 @@ plt.show()
 
 
     
-![png](README_files/README_7_0.png)
+![README_files/README_7_0.png](https://raw.githubusercontent.com/sradc/lr_schedules/master/README_files/README_7_0.png)
     
 
 
