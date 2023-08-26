@@ -15,10 +15,11 @@ repos:
       name: Python - autoflake, isort, black
       entry: bash -c 'make format'
       language: system
-      types: [python, jupyter]
+      files: \.(py|ipynb)$
       pass_filenames: false
     - id: make-readme
       name: Generate readme from ipynb...
       entry: bash -c 'make readme'
+      files: \.(py|ipynb)$
       language: system
       pass_filenames: false
