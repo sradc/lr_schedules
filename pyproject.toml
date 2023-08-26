@@ -1,10 +1,17 @@
 [tool.poetry]
 name = "lr_schedules"
 version = "0.0.1"
-description = ""
+description = "Learning rate schedulers, for libraries like PyTorch"
 authors = ["sradc <sidneyradcliffe@sky.com>"]
 readme = "README.md"
 packages = [{include = "lr_schedules"}]
+license = "Apache-2.0"
+include = [
+    "LICENSE",
+    "README.md",
+]
+homepage = "https://github.com/sradc/lr_schedules"
+repository = "https://github.com/sradc/lr_schedules"
 
 
 [tool.poetry.dependencies]
