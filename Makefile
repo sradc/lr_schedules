@@ -13,11 +13,14 @@ execute_readme:
 readme: execute_readme
 	poetry run python -m nbconvert --ExtractOutputPreprocessor.enabled=False --to markdown --output README.md README.tmp.ipynb
 
-# run semantic release, and publish to pypi (strict, so will fail if no release)
+# run semantic release, publish to github + pypi
 release:
-	poetry run semantic-release --strict version  \
-	&& poetry run semantic-release changelog  \
-	&& poetry run semantic-release publish  \
-	&& poetry publish  \
-	&& git push  \
-	&& git push --tags
+	if poetry run semantic-release --strict version; then \
+		poetry run semantic-release changelog && \
+		poetry run semantic-release publish && \
+		poetry publish && \
+		git push && \
+		git push --tags; \
+	else \
+		echo "No release needs to be made."; \
+	fi
