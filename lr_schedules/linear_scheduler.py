@@ -29,7 +29,7 @@ class LinearScheduler:
             AssertionError: If times are not in ascending order, or if times and values do not have the same length.
         """
         if total_training_steps is None:
-            assert 0 <= min(times) <= max(times) <= 1, (
+            assert not (0 <= min(times) <= max(times) <= 1), (
                 "If times contain values between 0 and 1, they are interpreted as fractions "
                 "of total_training_steps. In this case, total_training_steps must be provided."
             )
