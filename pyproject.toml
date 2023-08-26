@@ -6,8 +6,10 @@ authors = ["sradc <sidneyradcliffe@sky.com>"]
 readme = "README.md"
 packages = [{include = "lr_schedules"}]
 
+
 [tool.poetry.dependencies]
 python = ">=3.9"
+
 
 [tool.poetry.group.dev.dependencies]
 matplotlib = "^3.7.2"
@@ -19,6 +21,8 @@ numpy = "^1.25.2"
 pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
 pre-commit = "^3.3.3"
+python-semantic-release = "^8.0.7"
+
 
 [tool.poetry.group.docs]
 optional = true
@@ -31,10 +35,19 @@ torch = [
 matplotlib = "^3.7.2"
 nbconvert = "^7.7.4"
 
-[[tool.poetry.source]]
-name = "pytorch"
-url = "https://download.pytorch.org/whl/cpu"
-priority = "explicit"
+
+[tool.poetry.group.release]
+optional = true
+
+[tool.poetry.group.release.dependencies]
+python-semantic-release = "^8.0.7"
+
+
+[tool.semantic_release]
+version_variable = "pyproject.toml:version"
+upload_to_pypi = true
+remove_dist = true
+
 
 [build-system]
 requires = ["poetry-core"]
