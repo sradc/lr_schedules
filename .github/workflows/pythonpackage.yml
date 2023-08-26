@@ -20,6 +20,9 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install poetry==1.6.1
         poetry install
+    - name: Assert pre-commit has run (linting, etc.)
+      run: |
+        poetry run pre-commit run --all-files
     - name: Run tests
       run: |
         poetry run pytest tests
