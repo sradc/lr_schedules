@@ -11,7 +11,7 @@ execute_readme:
 	poetry run python -m nbconvert --to notebook --execute README.ipynb --output README.tmp.ipynb
 
 readme: execute_readme
-	poetry run python -m nbconvert --ExtractOutputPreprocessor.enabled=False --to markdown --output README.md README.tmp.ipynb
+	poetry run python -m nbconvert --to markdown --output README.md README.tmp.ipynb
 
 # run semantic release, publish to github + pypi
 release:

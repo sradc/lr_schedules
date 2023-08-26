@@ -20,6 +20,6 @@ repos:
     - id: make-readme
       name: Generate readme from ipynb...
       entry: bash -c 'make readme'
-      files: \.(py|ipynb)$
+      files: \.(py|ipynb)$|^README\.md$
       language: system
       pass_filenames: false
