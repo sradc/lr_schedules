@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "lr_schedules"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = ["sradc <sidneyradcliffe@sky.com>"]
 readme = "README.md"
@@ -44,10 +44,10 @@ python-semantic-release = "^8.0.7"
 
 
 [tool.semantic_release]
-version_variable = "pyproject.toml:version"
-upload_to_pypi = true
-remove_dist = true
-
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]
+build_command = "poetry build"
 
 [build-system]
 requires = ["poetry-core"]
